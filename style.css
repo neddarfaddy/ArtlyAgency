@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+a {
+  font-family: "Gabarito", sans-serif;
+  font-weight: 300; /* Change to 100–900 as needed */
+}
+p,
+h1,
+h2,
+h3 {
+  font-family: "Artly", sans-serif;
+  font-weight: 400; /* Change to 100–900 as needed */
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+  background-color: black;
+  position: relative;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6rem;
+}
+
+img {
+  width: 40%;
+}
+
+@font-face {
+  font-family: "Artly"; /* Give it a name */
+  src: url("/fonts/itc-avant-garde-gothic-pro-medium.otf") format("opentype");
+  font-weight: 500; /* or 300, 400, 700 depending on font */
+  font-style: normal; /* or italic if needed */
+}
+@font-face {
+  font-family: "Artly"; /* Give it a name */
+  src: url("/fonts/itc-avant-garde-gothic-pro-book.otf") format("opentype");
+  font-weight: 400; /* or 300, 400, 700 depending on font */
+  font-style: normal; /* or italic if needed */
+}
+
+.p {
+  position: absolute;
+  bottom: 10%;
+}
+
+.p p {
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  /* Mobile styles go here */
+
+  img {
+    width: 90%;
+  }
+  .p p {
+    font-size: 1rem;
+  } /* Adjust font sizes, layout, spacing, etc. */
+}
